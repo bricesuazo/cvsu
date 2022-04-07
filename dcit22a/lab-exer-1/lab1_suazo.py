@@ -1,0 +1,11 @@
+userName = str(input("Enter your name: "))
+userAge = int(input("Enter your age: "))
+userSection = str(input("Enter your section: "))
+userStudentNumber = float(input("Enter your student number: "))
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+
+print("The sum is:", num1 + num2)
+print("The difference is:", num1 - num2)
+print("The product is:", num1 * num2)
+print("The quotient is:", num1 / num2)
