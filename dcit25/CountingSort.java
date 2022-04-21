@@ -15,25 +15,31 @@ public class CountingSort {
                 max = i;
             }
         }
-        int indexArr[] = new int[max+1];
         
+        CountingSort(arr, max);
+        
+        System.out.print("Sorted Array: ");
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+    
+    private static void CountingSort(int arr[], int max){
+        int indexArr[] = new int[max+1];
         for (int i = 0; i < arr.length; i++) {
             indexArr[arr[i]]++;
         }
-        
+
         for (int i = 1; i < indexArr.length; i++) {
             indexArr[i] = indexArr[i-1] + indexArr[i];
         }
-        
-        int newArr[] = new int[arr.length];
+
+        int temp[] = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            newArr[indexArr[arr[i]]-1] = arr[i];
+            temp[indexArr[arr[i]]-1] = arr[i];
             indexArr[arr[i]]--;
         }
-        
-        System.out.print("Sorted Array: ");
-        for (int i : newArr) {
-            System.out.print(i + " ");
-        }
+        System.arraycopy(temp, 0, arr, 0, arr.length);
     }
 }
