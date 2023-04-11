@@ -1,21 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Tile.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
-[ext_resource path="res://Sprites/Coin.png" type="Texture" id=4]
+[ext_resource path="res://Coins.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://EnemyVertical.tscn" type="PackedScene" id=7]
+[ext_resource path="res://EnemyDiag.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Player2.gd" type="Script" id=10]
+[ext_resource path="res://Player3.gd" type="Script" id=11]
 
 [node name="MainScene" type="Node2D"]
 position = Vector2( 248, 160 )
 
 [node name="Tile" parent="." instance=ExtResource( 2 )]
-position = Vector2( -216, 408 )
+position = Vector2( -280, 408 )
 
 [node name="Tile2" parent="." instance=ExtResource( 2 )]
-position = Vector2( -152, 408 )
+position = Vector2( -216, 408 )
 
 [node name="Tile3" parent="." instance=ExtResource( 2 )]
-position = Vector2( -88, 408 )
+position = Vector2( -152, 408 )
 
 [node name="Tile4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 40, 408 )
@@ -42,19 +48,7 @@ position = Vector2( 552, 368 )
 position = Vector2( 680, 128 )
 
 [node name="Tile30" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1384, 320 )
-
-[node name="Coin" type="Sprite" parent="Tile30"]
-position = Vector2( -704, -288 )
-texture = ExtResource( 4 )
-
-[node name="Coin3" type="Sprite" parent="Tile30"]
-position = Vector2( -1080, -184 )
-texture = ExtResource( 4 )
-
-[node name="Coin2" type="Sprite" parent="Tile30"]
-position = Vector2( -8, -88 )
-texture = ExtResource( 4 )
+position = Vector2( 576, 304 )
 
 [node name="Tile12" parent="." instance=ExtResource( 2 )]
 position = Vector2( 424, 368 )
@@ -95,31 +89,118 @@ position = Vector2( 1192, 248 )
 [node name="Tile25" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1256, 248 )
 
+[node name="Tile31" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1320, 248 )
+
+[node name="Tile32" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1384, 248 )
+
 [node name="Tile26" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1320, 480 )
+position = Vector2( 1512, 480 )
 
 [node name="Tile27" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1384, 480 )
+position = Vector2( 1576, 480 )
 
 [node name="Tile28" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1448, 480 )
+position = Vector2( 1640, 480 )
 
 [node name="Tile29" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1512, 480 )
+position = Vector2( 1704, 480 )
 
 [node name="Tile9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 488, 368 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 136.0
-margin_top = -24.0
-margin_right = 387.0
-margin_bottom = 24.0
-text = "Brice Suazo (Game Developer)
-With 5 years experience
-Expected Salary: 250k pesos per month"
-align = 1
+[node name="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 448, 312 )
+
+[node name="Area2D7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1128, 160 )
+
+[node name="Area2D" parent="Area2D7" instance=ExtResource( 8 )]
+position = Vector2( -32, 0 )
+
+[node name="Area2D19" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1184, 584 )
+
+[node name="Area2D" parent="Area2D19" instance=ExtResource( 8 )]
+position = Vector2( -88, -24 )
+
+[node name="Area2D20" parent="Area2D19/Area2D" instance=ExtResource( 5 )]
+position = Vector2( 72, 120 )
+
+[node name="Area2D" parent="Area2D19/Area2D" instance=ExtResource( 8 )]
+position = Vector2( 144, -80 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 296, 160 )
+
+[node name="Area2D5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 680, 40 )
+
+[node name="Area2D6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1328, 160 )
+
+[node name="Area2D18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1112, 40 )
+
+[node name="Area2D8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1496, 416 )
+
+[node name="Area2D9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1568, 416 )
+
+[node name="Area2D17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1544, 416 )
+
+[node name="Area2D10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1616, 416 )
+
+[node name="Area2D11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1664, 416 )
+
+[node name="Area2D13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1688, 416 )
+
+[node name="Area2D14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1640, 416 )
+
+[node name="Area2D15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1592, 416 )
+
+[node name="Area2D16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1520, 416 )
+
+[node name="Area2D12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1712, 416 )
+
+[node name="Area2D3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 80, 336 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -104, 328 )
+position = Vector2( -152, 328 )
 script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 1.25, 1.25 )
+smoothing_enabled = true
+smoothing_speed = 10.0
+
+[node name="Player2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -224, 328 )
+script = ExtResource( 10 )
+
+[node name="Player3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -296, 328 )
+script = ExtResource( 11 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 6 )]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 138.0
+margin_bottom = 96.0
+
+[node name="Area2D4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 680, 246 )
