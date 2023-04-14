@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Tile.tscn" type="PackedScene" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://EnemyVertical.tscn" type="PackedScene" id=7]
 [ext_resource path="res://EnemyDiag.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player2.gd" type="Script" id=10]
-[ext_resource path="res://Player3.gd" type="Script" id=11]
 
 [node name="MainScene" type="Node2D"]
 position = Vector2( 248, 160 )
@@ -189,10 +188,6 @@ smoothing_speed = 10.0
 [node name="Player2" parent="." instance=ExtResource( 1 )]
 position = Vector2( -224, 328 )
 script = ExtResource( 10 )
-
-[node name="Player3" parent="." instance=ExtResource( 1 )]
-position = Vector2( -296, 328 )
-script = ExtResource( 11 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
