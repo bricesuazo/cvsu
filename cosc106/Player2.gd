@@ -52,3 +52,5 @@ func collect_coin(value):
 
 func _on_FallZone_body_entered(body):
 	die()
+
+
