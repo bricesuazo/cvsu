@@ -5,8 +5,6 @@ extends Area2D
 # var a = 2
 # var b = "text"
 
-export var value = 1
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,10 +12,9 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-
-
+#func _process(delta):
+#	pass
 
 func _on_Area2D_body_entered(body):
-	if body.name == "Player" || body.name == "Player2":
-		body.collect_coin(value)
-		queue_free()
+	if body.name == "Player":
+		body.die()

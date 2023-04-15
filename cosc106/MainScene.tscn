@@ -7,8 +7,10 @@
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://UI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://EnemyVertical.tscn" type="PackedScene" id=7]
-[ext_resource path="res://EnemyDiag.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Player2.gd" type="Script" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2060, 57 )
 
 [node name="MainScene" type="Node2D"]
 position = Vector2( 248, 160 )
@@ -22,14 +24,83 @@ position = Vector2( -216, 408 )
 [node name="Tile3" parent="." instance=ExtResource( 2 )]
 position = Vector2( -152, 408 )
 
+[node name="Tile6" parent="." instance=ExtResource( 2 )]
+position = Vector2( -472, 408 )
+
+[node name="Tile33" parent="." instance=ExtResource( 2 )]
+position = Vector2( -408, 408 )
+
+[node name="Tile34" parent="." instance=ExtResource( 2 )]
+position = Vector2( -344, 408 )
+
+[node name="Tile35" parent="." instance=ExtResource( 2 )]
+position = Vector2( -664, 408 )
+
+[node name="Tile36" parent="." instance=ExtResource( 2 )]
+position = Vector2( -600, 408 )
+
+[node name="Tile37" parent="." instance=ExtResource( 2 )]
+position = Vector2( -536, 408 )
+
+[node name="Tile38" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 408 )
+
+[node name="Tile41" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 344 )
+
+[node name="Tile42" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 280 )
+
+[node name="Tile43" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 216 )
+
+[node name="Tile44" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 152 )
+
+[node name="Tile45" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 88 )
+
+[node name="Tile46" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, 24 )
+
+[node name="Tile47" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -40 )
+
+[node name="Tile48" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -104 )
+
+[node name="Tile49" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -168 )
+
+[node name="Tile50" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -232 )
+
+[node name="Tile51" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -296 )
+
+[node name="Tile52" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -360 )
+
+[node name="Tile53" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -424 )
+
+[node name="Tile54" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -488 )
+
+[node name="Tile55" parent="." instance=ExtResource( 2 )]
+position = Vector2( -856, -552 )
+
+[node name="Tile39" parent="." instance=ExtResource( 2 )]
+position = Vector2( -792, 408 )
+
+[node name="Tile40" parent="." instance=ExtResource( 2 )]
+position = Vector2( -728, 408 )
+
 [node name="Tile4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 40, 408 )
 
 [node name="Tile5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 104, 408 )
-
-[node name="Tile6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 168, 344 )
 
 [node name="Tile7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 232, 232 )
@@ -112,24 +183,6 @@ position = Vector2( 488, 368 )
 [node name="Area2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 448, 312 )
 
-[node name="Area2D7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1128, 160 )
-
-[node name="Area2D" parent="Area2D7" instance=ExtResource( 8 )]
-position = Vector2( -32, 0 )
-
-[node name="Area2D19" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1184, 584 )
-
-[node name="Area2D" parent="Area2D19" instance=ExtResource( 8 )]
-position = Vector2( -88, -24 )
-
-[node name="Area2D20" parent="Area2D19/Area2D" instance=ExtResource( 5 )]
-position = Vector2( 72, 120 )
-
-[node name="Area2D" parent="Area2D19/Area2D" instance=ExtResource( 8 )]
-position = Vector2( 144, -80 )
-
 [node name="Area2D2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 296, 160 )
 
@@ -176,7 +229,7 @@ position = Vector2( 1712, 416 )
 position = Vector2( 80, 336 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -152, 328 )
+position = Vector2( -384, 112 )
 script = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -186,7 +239,7 @@ smoothing_enabled = true
 smoothing_speed = 10.0
 
 [node name="Player2" parent="." instance=ExtResource( 1 )]
-position = Vector2( -224, 328 )
+position = Vector2( -456, 112 )
 script = ExtResource( 10 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -199,3 +252,15 @@ margin_bottom = 96.0
 
 [node name="Area2D4" parent="." instance=ExtResource( 7 )]
 position = Vector2( 680, 246 )
+
+[node name="FallZone" type="Area2D" parent="."]
+position = Vector2( -224, 552 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="FallZone"]
+position = Vector2( 1052, 47 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="FallZone" to="Player" method="_on_FallZone_body_entered"]

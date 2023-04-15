@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-var score:int = 0
-
 onready var ui = get_node("/root/MainScene/CanvasLayer/UI")
 
 export var speed: int = 400
@@ -12,19 +10,27 @@ onready var sprite = $Sprite
 
 var velocity: Vector2  = Vector2()
 var grounded: bool = false
+var falling_speed = 0
 
 func _ready():
 	pass
 
 func _physics_process(delta):
-	
 	velocity.x = 0
 	
-	if Input.is_action_pressed("move_left"):
-		velocity.x -= speed
-	if Input.is_action_pressed("move_right"):
-		velocity.x += speed
 	
+	if Input.is_action_pressed("move_left"):
+		sprite.play("walk")
+		velocity.x -= speed
+	elif Input.is_action_pressed("move_right"):
+		sprite.play("walk")
+		velocity.x += speed
+	else:
+		sprite.play("idle")
+		
+	if not is_on_floor():
+		sprite.play("air")
+			
 	velocity = move_and_slide(velocity, Vector2.UP)
 
 	velocity.y += gravity * delta
@@ -37,10 +43,15 @@ func _physics_process(delta):
 	elif velocity.x > 0:
 		sprite.flip_h = false
 	
+	
 func die():
 	get_tree().reload_current_scene()
 
 func collect_coin(value):
-	score += value
+	ui.score += value
 	
-	ui.set_score_text(score)
+	ui.set_score_text(ui.score)
+
+
+func _on_FallZone_body_entered(body):
+	die()

@@ -1,5 +1,7 @@
 extends Control
 
+var score:int = 0
+
 onready var scoreText = get_node("Label")
 # Declare member variables here. Examples:
 # var a = 2

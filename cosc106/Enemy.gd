@@ -44,5 +44,5 @@ func _physics_process(delta):
 			targetX = startX
 
 func _on_Area2D_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player" || body.name == "Player2":
 		body.die()
