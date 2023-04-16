@@ -11,4 +11,5 @@ extents = Vector2( 32, 32 )
 shape = SubResource( 1 )
 
 [node name="Tile" type="Sprite" parent="."]
+scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
