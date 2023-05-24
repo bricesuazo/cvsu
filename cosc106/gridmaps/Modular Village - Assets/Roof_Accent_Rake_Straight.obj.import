@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Roof_Accent_Rake_Straight.obj-7c074609b17a1b2b553b529e5df7b5c8.mesh"
+
+[deps]
+
+files=[ "res://.import/Roof_Accent_Rake_Straight.obj-7c074609b17a1b2b553b529e5df7b5c8.mesh" ]
+
+source_file="res://Modular Village - Assets/Roof_Accent_Rake_Straight.obj"
+dest_files=[ "res://.import/Roof_Accent_Rake_Straight.obj-7c074609b17a1b2b553b529e5df7b5c8.mesh", "res://.import/Roof_Accent_Rake_Straight.obj-7c074609b17a1b2b553b529e5df7b5c8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

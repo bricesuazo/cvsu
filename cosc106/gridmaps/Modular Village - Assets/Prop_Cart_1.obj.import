@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Cart_1.obj-05d1ad79b6a91dd229c4240313249afd.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Cart_1.obj-05d1ad79b6a91dd229c4240313249afd.mesh" ]
+
+source_file="res://Modular Village - Assets/Prop_Cart_1.obj"
+dest_files=[ "res://.import/Prop_Cart_1.obj-05d1ad79b6a91dd229c4240313249afd.mesh", "res://.import/Prop_Cart_1.obj-05d1ad79b6a91dd229c4240313249afd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

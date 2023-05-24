@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Roof_Prop_Chimney_Pipe.obj-dd284763adcb5c840172c0f16bda9278.mesh"
+
+[deps]
+
+files=[ "res://.import/Roof_Prop_Chimney_Pipe.obj-dd284763adcb5c840172c0f16bda9278.mesh" ]
+
+source_file="res://Modular Village - Assets/Roof_Prop_Chimney_Pipe.obj"
+dest_files=[ "res://.import/Roof_Prop_Chimney_Pipe.obj-dd284763adcb5c840172c0f16bda9278.mesh", "res://.import/Roof_Prop_Chimney_Pipe.obj-dd284763adcb5c840172c0f16bda9278.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

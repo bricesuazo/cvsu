@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wood_Railing_Stairs.obj-4c9dd7b3b7c06e3d4b62dae287887c50.mesh"
+
+[deps]
+
+files=[ "res://.import/Wood_Railing_Stairs.obj-4c9dd7b3b7c06e3d4b62dae287887c50.mesh" ]
+
+source_file="res://Modular Village - Assets/Wood_Railing_Stairs.obj"
+dest_files=[ "res://.import/Wood_Railing_Stairs.obj-4c9dd7b3b7c06e3d4b62dae287887c50.mesh", "res://.import/Wood_Railing_Stairs.obj-4c9dd7b3b7c06e3d4b62dae287887c50.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

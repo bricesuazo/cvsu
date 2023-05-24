@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Stone_Arch_Outer.obj-9745f62ddd4785e39f2f616980a12792.mesh"
+
+[deps]
+
+files=[ "res://.import/Stone_Arch_Outer.obj-9745f62ddd4785e39f2f616980a12792.mesh" ]
+
+source_file="res://Modular Village - Assets/Stone_Arch_Outer.obj"
+dest_files=[ "res://.import/Stone_Arch_Outer.obj-9745f62ddd4785e39f2f616980a12792.mesh", "res://.import/Stone_Arch_Outer.obj-9745f62ddd4785e39f2f616980a12792.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
