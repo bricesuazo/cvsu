@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Modular Village - Assets/Prop_Crate_1_Open.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( 0.5, 0.999804, 0, -0.5, 0.000195793, -0.5, -0.5, 0.000195793, 0.5, -0.5, 0.999804, -0.5, 0.5, 0.000195793, -0.5, -0.5, 0.999804, 0.5, 0.499902, 0.000195793, 0.5, 0.5, 0.999804, -0.5, 0.499902, 0.999804, 0.5 )
+
+[node name="Crate" type="RigidBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="Prop_Crate_1_Open" type="MeshInstance" parent="CollisionShape"]
+mesh = ExtResource( 1 )
+skeleton = NodePath("../..")

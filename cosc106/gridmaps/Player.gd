@@ -8,7 +8,7 @@ export var gravity: float = 15.0
 #Camera Look
 var minLookAngle: float = -90.0
 var maxLookAngle: float = 90.0
-var lookSensitivity: float = 0.5
+var lookSensitivity: float = 0.1
 
 #player sprinting properties
 var is_sprinting: bool = false
@@ -33,7 +33,7 @@ export var objectPullPower: float = 4.0
 func _ready():
 	#hide and lock the mouse cursor
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	OS.window_fullscreen = false
+	OS.window_fullscreen = true
 
 func pickObjects():
 	var collider = interaction.get_collider()
