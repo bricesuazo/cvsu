@@ -24,6 +24,7 @@ var mouseDelta: Vector2 = Vector2()
 onready var camera = get_node("Camera")
 onready var interaction = get_node("Camera/Interaction")
 onready var hand = get_node("Camera/Hand")
+onready var flashlight = get_node("Camera/SpotLight")
 
 #Physics and Pick up Objects
 var pickedObject
@@ -35,6 +36,8 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	OS.window_fullscreen = true
 
+
+		
 func pickObjects():
 	var collider = interaction.get_collider()
 	if collider != null and collider is RigidBody:
@@ -46,6 +49,11 @@ func dropObjects():
 
 
 func _physics_process(delta):
+	if Input.is_action_pressed("flashlight"):
+		flashlight.visible = true
+	else:
+		flashlight.visible = false
+
 	#reset the x and z velocity
 	velocity.x = 0
 	velocity.z = 0
@@ -126,6 +134,8 @@ func _process(delta):
 	
 	#reset the mouse delta vector
 	mouseDelta = Vector2()
+	
+
 
 #to show/hide cursor
 func window_activity():

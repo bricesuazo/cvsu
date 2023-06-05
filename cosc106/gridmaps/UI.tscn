@@ -17,3 +17,14 @@ margin_right = 20.0
 margin_bottom = 7.0
 rect_scale = Vector2( 2.39684, 2.39684 )
 text = "+"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+margin_left = 24.0
+margin_top = 15.0
+margin_right = 188.0
+margin_bottom = 29.0
+rect_scale = Vector2( 2.55571, 2.55571 )
+text = "Shortcut key:
+
+F = Open flashlight
+E = Grab object"

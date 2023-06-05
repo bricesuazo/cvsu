@@ -122,7 +122,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2, 1, 0 )
+transform = Transform( 0.376236, 0, -0.329312, 0, 0.5, 0, 0.329312, 0, 0.376236, 0.280329, 0.674021, -15.3295 )
 script = ExtResource( 4 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
@@ -195,7 +195,7 @@ light_color = Color( 1, 0.996078, 0.941176, 1 )
 light_energy = 4.479
 light_indirect_energy = 1.696
 shadow_enabled = true
-shadow_contact = 0.45
+shadow_contact = 5.835
 directional_shadow_split_1 = 0.329
 directional_shadow_split_2 = 0.319
 directional_shadow_blend_splits = true
@@ -210,28 +210,28 @@ spot_range = 18.831
 spot_angle = 58.44
 
 [node name="Crate" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.826, 0.5, 7.174 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05432, 0.5, 6.68556 )
 
 [node name="Crate2" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.826, 0.5, 8.174 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05432, 0.5, 7.68556 )
 
 [node name="Crate3" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.826, 0.5, 8.174 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05432, 0.5, 7.68556 )
 
 [node name="Crate4" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.826, 0.5, 7.174 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05432, 0.5, 6.68556 )
 
 [node name="Barrel" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2737, 0.5281, 5.79332 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.07317, 0.5281, 5.23318 )
 
 [node name="Barrel2" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72327, 0.5281, 5.79332 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.52274, 0.5281, 5.23318 )
 
 [node name="Barrel3" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72327, 0.5281, 5.26529 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.52274, 0.5281, 4.70515 )
 
 [node name="Barrel4" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25218, 0.5281, 5.26529 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05165, 0.5281, 4.70515 )
 
 [node name="Hay" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.968722, 0, -0.248149, 0, 1, 0, 0.248149, 0, 0.968722, 8.0607, 0.5, 3.91315 )
@@ -242,6 +242,39 @@ transform = Transform( 0.981846, 0, 0.189678, 0, 1, 0, -0.189678, 0, 0.981846, 7
 [node name="Hay3" parent="." instance=ExtResource( 3 )]
 transform = Transform( -0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 7.1651, 0.5, 3.97805 )
 
+[node name="Crate5" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -3.57802, 0.68371, -14.3797 )
+
+[node name="Crate6" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -2.5798, 0.68371, -14.32 )
+
+[node name="Crate7" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -2.52011, 0.68371, -15.3182 )
+
+[node name="Crate8" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -3.51833, 0.68371, -15.3779 )
+
+[node name="Barrel5" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -4.96699, 0.71181, -15.4834 )
+
+[node name="Barrel6" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -4.99985, 0.71181, -14.934 )
+
+[node name="Barrel7" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -5.52694, 0.71181, -14.9655 )
+
+[node name="Barrel8" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.0596896, 0, 0.998217, 0, 1, 0, -0.998217, 0, 0.0596896, -5.49537, 0.71181, -15.4935 )
+
+[node name="Hay4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.305529, 0, 0.952183, 0, 1, 0, -0.952183, 0, 0.305529, -6.04666, 0.68371, -19.5426 )
+
+[node name="Hay5" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.130734, 0, 0.991417, 0, 1, 0, -0.991417, 0, -0.130734, -5.28178, 0.68371, -19.4086 )
+
+[node name="Hay6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.948755, 0, -0.316013, 0, 1, 0, 0.316013, 0, 0.948755, -6.03533, 0.68371, -18.6448 )
+
 [node name="Cart" parent="." instance=ExtResource( 8 )]
 transform = Transform( 0.169229, 0, -0.985577, 0, 1, 0, 0.985577, 0, 0.169229, -8.70415, 0.5, 4.50325 )
 mass = 3.0
@@ -251,9 +284,9 @@ transform = Transform( -0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926,
 mass = 3.0
 
 [node name="Waterwheel" parent="." instance=ExtResource( 9 )]
-transform = Transform( -0.329658, 0, 0.944101, 0, 1, 0, -0.944101, 0, -0.329658, -11.6442, 0.5, -5.44649 )
+transform = Transform( -0.329658, 0, 0.944101, 0, 1, 0, -0.944101, 0, -0.329658, -5.4804, 0.5, -4.70322 )
 mass = 5.0
 
 [node name="Waterwheel2" parent="." instance=ExtResource( 9 )]
-transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 13.5148, 0.499999, -5.00177 )
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6.09254, 0.5, -5.51518 )
 mass = 5.0
