@@ -155,13 +155,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5 )
 transform = Transform( 0.02, 0, 0, 0, 0.03, 0, 0, 0, 0.15, 0, 0.041, -0.095 )
 layers = 2
 mesh = SubResource( 2 )
-material/0 = null
 
 [node name="Lower" type="MeshInstance" parent="Root/Anchor/Body"]
 transform = Transform( 0.02, 0, 0, 0, 0.0791418, 0.00438249, 0, -0.0116866, 0.0296782, 0, -0.013, 0.037 )
 layers = 2
 mesh = SubResource( 2 )
-material/0 = null
 
 [node name="MuzzleFlash" parent="Root/Anchor" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0410036, -0.817509 )

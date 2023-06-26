@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scene/player/player.gd" type="Script" id=1]
 [ext_resource path="res://scene/ui/hud/hud.tscn" type="PackedScene" id=4]
@@ -15,6 +15,13 @@ mid_height = 0.8
 [sub_resource type="CapsuleShape" id=2]
 radius = 0.5
 height = 0.8
+
+[sub_resource type="CapsuleMesh" id=6]
+radius = 0.076
+mid_height = 0.528
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.0705882, 0.517647, 0.294118, 1 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "HeadBob"
@@ -100,9 +107,33 @@ ray_path = NodePath("../HeadBob/Camera/RayCast")
 [node name="Pistol_B" parent="CamRoot/Wallrun/Weapons" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38, -0.22, -0.621 )
 
+[node name="Hand" type="MeshInstance" parent="CamRoot/Wallrun/Weapons/Pistol_B"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0422142, 0.00914156, 0.26722 )
+mesh = SubResource( 6 )
+skeleton = NodePath("../../../../..")
+material/0 = SubResource( 7 )
+
 [node name="Rifle_B" parent="CamRoot/Wallrun/Weapons" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.368, -0.208, -0.585 )
 visible = false
+
+[node name="Hand2" type="MeshInstance" parent="CamRoot/Wallrun/Weapons/Rifle_B"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0542142, -0.00285852, 0.23122 )
+mesh = SubResource( 6 )
+skeleton = NodePath("../../../../..")
+material/0 = SubResource( 7 )
+
+[node name="Hand2" type="MeshInstance" parent="CamRoot/Wallrun/Weapons"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.414085, -0.210858, -0.35378 )
+mesh = SubResource( 6 )
+skeleton = NodePath("../../../..")
+material/0 = SubResource( 7 )
+
+[node name="SpotLight" type="SpotLight" parent="CamRoot/Wallrun/Weapons/Hand2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0186444, -0.0135109, -0.194154 )
+light_energy = 4.0
+spot_range = 8.504
+spot_angle = 32.48
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
@@ -110,9 +141,6 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 stretch = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 1280, 720 )
